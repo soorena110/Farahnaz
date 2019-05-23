@@ -1,0 +1,26 @@
+{
+  "name": "farahnaz",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "prepare-repository": "npm i -g react-native-cli yarn;yarn install; react- native link",
+    "emulator": "emulator -avd Nexus5V6L23_x86_64 -scale 1.0",
+    "install": "react-native run-android",
+    "start": "react-native start --reset-cache",
+    "android": "npm run install && npm run start",
+    "clean": "npm cache clean --force && cd android && gradlew clean && cd ..",
+    "test": "jest",
+    "start2": "node node_modules/react-native/local-cli/cli.js start",
+	"build" : "cd android && gradlew assembleRelease && cd .."
+  },
+  "dependencies": {
+    "react": "16.6.0-alpha.8af6728",
+    "react-native": "0.57.4",
+    "react-native-sound": "^0.10.9"
+  },
+  "devDependencies": {
+    "babel-jest": "23.6.0",
+    "metro-react-native-babel-preset": "0.49.0",
+    "react-test-renderer": "16.6.0-alpha.8af6728"
+  }
+}
