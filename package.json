@@ -11,7 +11,7 @@
     "clean": "npm cache clean --force && cd android && gradlew clean && cd ..",
     "test": "jest",
     "start2": "node node_modules/react-native/local-cli/cli.js start",
-	"build" : "cd android && gradlew assembleRelease && cd .."
+    "build": "cd android && gradlew assembleRelease && cd .."
   },
   "dependencies": {
     "react": "16.6.0-alpha.8af6728",
